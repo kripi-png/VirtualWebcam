@@ -6,8 +6,12 @@
 2. Get two images; one for ON state and one for OFF state. Or you can use the shrek and pop cat images (and settings)
 3. CD to the project folder
 4. run ```main.py --help```for available commands or look at the list below
-5. Open OBS and set up a virtual webcam, then select it as a camera in Discord or whatever. You can follow [these instructions](https://obsproject.com/forum/resources/obs-virtualcam.539/)
-
+5. You probably have to install some Python modules, you can do it by running ```pip install <module name>```. On Windows, when installing PyAudio, you may have to use pipwin instead:
+```
+pip install pipwin
+pipwin install pyaudio
+```
+6. Open OBS and set up a virtual webcam, then select it as a camera in Discord or whatever. You can follow [these instructions](https://obsproject.com/forum/resources/obs-virtualcam.539/)
 ```html
 -h, --help            show this help message and exit
 --list                show a list of all available settings and exit
