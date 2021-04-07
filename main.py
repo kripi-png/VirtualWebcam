@@ -80,7 +80,10 @@ def main(args):
         event, values = WINDOW.read(timeout=TIMEOUT)
         if event == sg.WIN_CLOSED or event == 'Cancel': break
 
-        WINDOW["IMAGE"].update(ON if is_speech(stream, VOLUME_TRESHOLD) else OFF)
+        newState = ON if is_speech(stream, VOLUME_TRESHOLD) else OFF
+        if WINDOW["IMAGE"].Filename != newState:
+            WINDOW["IMAGE"].update(newState)
+            WINDOW["IMAGE"].Filename = newState
 
     WINDOW.close()
 
