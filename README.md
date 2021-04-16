@@ -5,7 +5,7 @@
 - OBS https://obsproject.com/download
 
 ## How to use
-1.Download or clone the project
+1. Download or clone the project
 2. Get two images; one for ON state and one for OFF state. Or you can use the default ones
 3. run ```main.py --help``` to get a list of available commands
 4. Open OBS and set up a virtual webcam, then select it as a camera in Discord/Zoom/Teams or whatever. You can follow [these instructions](https://obsproject.com/forum/resources/obs-virtualcam.539/)
